@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+
+    <link rel="stylesheet" href="css/adrgon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="four columns">
+                    <span id="logo">Shopping-store</span>
+                </div>
+
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" width="40" id="img-carrito">
+
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th>Talla</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody> <!-- va a ser muy importante-->
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="lista-productos" class="container">
+        <h1 id="encabezado" class="encabezado">Catalogo</h1>
+        
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/camisa.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Camisa Escocesa</h4>
+                        <p>Hombre</p>
+
+                        <p class="precio">$90 <span class="u-pull-right ">$35</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>                     
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="1">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/polera_polo.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Polera Polo</h4>
+                        <p>Hombre</p>
+
+                        <p class="precio">$35 <span class="u-pull-right ">$22</span></p>
+                        <p>Cantidad 
+                                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                            <select id="slcTalla" name="slcTalla" class="talla">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </p>                
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="2">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/polera_urbana.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Polera Urbana</h4>
+                        <p>Hombre</p>
+
+                        <p class="precio">$66 <span class="u-pull-right ">$44</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="3">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+
+        </div>
+        <!--.row-->
+
+        <div class="espacio"></div>
+        
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/chaleco.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Chaleco Blanco</h4>
+                        <p>Mujer</p>
+
+                        <p class="precio">$70 <span class="u-pull-right ">$50</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="4">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/chaqueta_blazer.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Blazer</h4>
+                        <p>Mujer</p>
+
+                        <p class="precio">$42 <span class="u-pull-right ">$15</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="5">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/poncho.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Poncho</h4>
+                        <p>Mujer</p>
+
+                        <p class="precio">$20 <span class="u-pull-right ">$15</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="6">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+        <!--.row-->
+
+        <div class="espacio"></div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/chaqueta.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Chaqueta Cuero</h4>
+                        <p>Hombre / Mujer</p>
+
+                        <p class="precio">$80 <span class="u-pull-right ">$35</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>                     
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="7">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pantalon_terno.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Pantalon Terno</h4>
+                        <p>Hombre</p>
+
+                        <p class="precio">$44 <span class="u-pull-right ">$22</span></p>
+                        <p>Cantidad 
+                                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                            <select id="slcTalla" name="slcTalla" class="talla">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </p>                
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="8">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/pantalon.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Pantalon Jeans Negro</h4>
+                        <p>Hombre</p>
+
+                        <p class="precio">$100 <span class="u-pull-right ">$44</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="9">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+
+        </div>
+        <!--.row-->
+
+        <div class="espacio"></div>
+        
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/falda.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Falda</h4>
+                        <p>Mujer</p>
+
+                        <p class="precio">$200 <span class="u-pull-right ">$50</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="10">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/vestido.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Vestido</h4>
+                        <p>Mujer</p>
+
+                        <p class="precio">$55 <span class="u-pull-right ">$15</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="11">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/vestido_largo.png" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Vestido Largo</h4>
+                        <p>Mujer</p>
+
+                        <p class="precio">$40 <span class="u-pull-right ">$15</span></p>
+                        <p>Cantidad 
+                        
+                        <select id="slcCantidad" name="slcCantidad" class="cantidad">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select></p>
+
+                        <p>Talla
+                                            <select id="slcTalla" name="slcTalla" class="talla">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                        </p>    
+
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="12">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <!--.card-->
+            </div>
+        </div>
+        <!--.row-->
+
+        <div class="espacio"></div>
+    </div>
+
+</body>
+
+</html>
